@@ -1,6 +1,6 @@
 package UserService.Model;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,6 +15,7 @@ public class Users {
 	private Long id;
 	private String name;
 	private String mobileNo;
+	private List<Orders> orders;
 
 	public Long getId() {
 		return id;
