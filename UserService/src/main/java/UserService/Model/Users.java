@@ -6,6 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 
 @Entity
 public class Users {
@@ -15,6 +16,7 @@ public class Users {
 	private Long id;
 	private String name;
 	private String mobileNo;
+	@ManyToMany
 	private List<Orders> orders;
 
 	public Long getId() {
